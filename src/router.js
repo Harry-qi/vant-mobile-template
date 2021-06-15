@@ -11,9 +11,9 @@ const routes = [
   {
     name: 'index',
     path: '/index',
-    component: () => import('./view/home'),
+    component: () => import('./view/example'),
     meta: {
-      title: 'home'
+      title: 'example'
     }
   }
 ]

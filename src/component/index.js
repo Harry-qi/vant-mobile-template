@@ -1,5 +1,5 @@
 // 部分引入 vant 组件
-import { Tab, Tabs, List, PullRefresh, Search } from 'vant'
+import { Tab, Tabs, List, PullRefresh, Search, Empty } from 'vant'
 import searchInput from '@/component/SearchInput'
 export default {
   install(Vue) {
@@ -9,5 +9,6 @@ export default {
     Vue.use(List)
     Vue.use(PullRefresh)
     Vue.use(Search)
+    Vue.use(Empty)
   }
 }
