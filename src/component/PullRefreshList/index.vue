@@ -60,7 +60,8 @@ export default {
         } else {
           this.finished = true
         }
-      }).catch(() => {
+      }).catch((e) => {
+        console.log(e)
         // 防止报错
         this.loading = false
         this.refreshing = false
