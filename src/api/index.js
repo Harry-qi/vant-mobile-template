@@ -5,3 +5,9 @@ export function getList(params) {
     params
   })
 }
+export function getUser(params) {
+  return request({
+    url: 'xxx',
+    params
+  })
+}

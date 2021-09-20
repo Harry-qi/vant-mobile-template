@@ -14,7 +14,7 @@
 
 <script>
 import PullRefreshList from '@/component/PullRefreshList'
-import API from '@/api/index'
+import * as API from '@/api/index'
 export default {
   components: { PullRefreshList },
   data() {
@@ -36,7 +36,7 @@ export default {
       const res = await API.getList(ajaxData)
       res.data.data = res.data.data.map(item => {
         item.avatar = ''
-        API.getUser(q).then(r => {
+        API.getUser().then(r => {
           item.avatar = r.data.avatar
         })
         return item

@@ -1,4 +1,4 @@
-import setting from '@/setting'
+const setting = require('./src/setting.js')
 const path = require('path')
 
 function resolve(dir) {
